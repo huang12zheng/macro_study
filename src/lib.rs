@@ -1,12 +1,16 @@
+mod field;
 #[cfg(test)]
-use darling::export::syn::parse_quote;
-use darling::{export::syn::DeriveInput, FromDeriveInput};
+pub(crate) use darling::export::syn::parse_quote;
+pub(crate) use darling::{
+    export::syn::{DeriveInput, TraitItemMethod, Type},
+    FromDeriveInput, FromField,
+};
 #[cfg(test)]
-use insta::assert_debug_snapshot;
+pub(crate) use insta::assert_debug_snapshot;
 // use proc_macro2::TokenStream;
-use convert_case::{Case, Casing};
-use darling::export::syn::{Ident, Visibility};
-use proc_macro2::Span;
+pub(crate) use convert_case::{Case, Casing};
+pub(crate) use darling::export::syn::{Ident, Visibility};
+pub(crate) use proc_macro2::Span;
 
 // #[allow(dead_code)]
 #[derive(Debug, FromDeriveInput)]
@@ -81,3 +85,8 @@ fn test_parse_input() {
     let actual = Encapsulation::from_input(&input).unwrap();
     assert_debug_snapshot!(actual);
 }
+// struct MethodList(Vec<syn::TraitItemMethod>);
+
+mod test_helper;
+#[cfg(test)]
+pub use test_helper::*;

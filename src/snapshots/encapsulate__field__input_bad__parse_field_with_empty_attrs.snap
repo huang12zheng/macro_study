@@ -1,0 +1,5 @@
+---
+source: src/field.rs
+expression: field.pretty()
+---
+"# [export_methods (fn signal (& self , stage : usize) , fn wait_for (& self , stage : usize) ,)] pub signal : Arc < Signal >"

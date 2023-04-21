@@ -1,0 +1,6 @@
+---
+source: src/field.rs
+assertion_line: 45
+expression: attr.pretty()
+---
+"# [export_methods (fn signal (& self , stage : usize) , fn wait_for (& self , stage : usize) ,)]"

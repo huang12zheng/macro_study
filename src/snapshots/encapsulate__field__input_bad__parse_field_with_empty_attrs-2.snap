@@ -1,0 +1,12 @@
+---
+source: src/field.rs
+expression: field
+---
+EncapsulationField {
+    ident: Some(
+        Ident(
+            signal,
+        ),
+    ),
+    attrs: [],
+}

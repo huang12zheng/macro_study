@@ -1,0 +1,15 @@
+---
+source: src/field.rs
+expression: encapsulation_field
+---
+EncapsulationField {
+    ident: Some(
+        Ident(
+            signal,
+        ),
+    ),
+    export_methods_str: [
+        "fn signal(&self, stage: usize)",
+    ],
+    export_methods: [],
+}

@@ -1,0 +1,158 @@
+---
+source: src/field.rs
+expression: get_field()
+---
+Field {
+    attrs: [
+        Attribute {
+            pound_token: Pound,
+            style: Outer,
+            bracket_token: Bracket,
+            path: Path {
+                leading_colon: None,
+                segments: [
+                    PathSegment {
+                        ident: Ident(
+                            export_methods,
+                        ),
+                        arguments: None,
+                    },
+                ],
+            },
+            tokens: TokenStream [
+                Group {
+                    delimiter: Parenthesis,
+                    stream: TokenStream [
+                        Ident {
+                            sym: fn,
+                        },
+                        Ident {
+                            sym: signal,
+                        },
+                        Group {
+                            delimiter: Parenthesis,
+                            stream: TokenStream [
+                                Punct {
+                                    char: '&',
+                                    spacing: Alone,
+                                },
+                                Ident {
+                                    sym: self,
+                                },
+                                Punct {
+                                    char: ',',
+                                    spacing: Alone,
+                                },
+                                Ident {
+                                    sym: stage,
+                                },
+                                Punct {
+                                    char: ':',
+                                    spacing: Alone,
+                                },
+                                Ident {
+                                    sym: usize,
+                                },
+                            ],
+                        },
+                        Punct {
+                            char: ',',
+                            spacing: Alone,
+                        },
+                        Ident {
+                            sym: fn,
+                        },
+                        Ident {
+                            sym: wait_for,
+                        },
+                        Group {
+                            delimiter: Parenthesis,
+                            stream: TokenStream [
+                                Punct {
+                                    char: '&',
+                                    spacing: Alone,
+                                },
+                                Ident {
+                                    sym: self,
+                                },
+                                Punct {
+                                    char: ',',
+                                    spacing: Alone,
+                                },
+                                Ident {
+                                    sym: stage,
+                                },
+                                Punct {
+                                    char: ':',
+                                    spacing: Alone,
+                                },
+                                Ident {
+                                    sym: usize,
+                                },
+                            ],
+                        },
+                        Punct {
+                            char: ',',
+                            spacing: Alone,
+                        },
+                    ],
+                },
+            ],
+        },
+    ],
+    vis: Public(
+        VisPublic {
+            pub_token: Pub,
+        },
+    ),
+    ident: Some(
+        Ident(
+            signal,
+        ),
+    ),
+    colon_token: Some(
+        Colon,
+    ),
+    ty: Path(
+        TypePath {
+            qself: None,
+            path: Path {
+                leading_colon: None,
+                segments: [
+                    PathSegment {
+                        ident: Ident(
+                            Arc,
+                        ),
+                        arguments: AngleBracketed(
+                            AngleBracketedGenericArguments {
+                                colon2_token: None,
+                                lt_token: Lt,
+                                args: [
+                                    Type(
+                                        Path(
+                                            TypePath {
+                                                qself: None,
+                                                path: Path {
+                                                    leading_colon: None,
+                                                    segments: [
+                                                        PathSegment {
+                                                            ident: Ident(
+                                                                Signal,
+                                                            ),
+                                                            arguments: None,
+                                                        },
+                                                    ],
+                                                },
+                                            },
+                                        ),
+                                    ),
+                                ],
+                                gt_token: Gt,
+                            },
+                        ),
+                    },
+                ],
+            },
+        },
+    ),
+}

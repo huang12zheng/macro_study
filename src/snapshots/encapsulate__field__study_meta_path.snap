@@ -1,0 +1,5 @@
+---
+source: src/field.rs
+expression: parse_meta_path.pretty()
+---
+"encapsulation"

@@ -1,0 +1,9 @@
+---
+source: src/field.rs
+expression: meta
+---
+Err(
+    Error(
+        "expected `,`",
+    ),
+)
