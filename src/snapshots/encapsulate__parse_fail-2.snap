@@ -1,0 +1,30 @@
+---
+source: src/lib.rs
+expression: actual
+---
+Err(
+    Error {
+        kind: Multiple(
+            [
+                Error {
+                    kind: Custom(
+                        "Unable to parse attribute: expected literal",
+                    ),
+                    locations: [],
+                    span: Some(
+                        Span,
+                    ),
+                },
+                Error {
+                    kind: MissingField(
+                        "encapsulant_name",
+                    ),
+                    locations: [],
+                    span: None,
+                },
+            ],
+        ),
+        locations: [],
+        span: None,
+    },
+)

@@ -1,0 +1,32 @@
+---
+source: src/lib.rs
+expression: actual
+---
+Encapsulation {
+    ident: Ident(
+        KnobsStruct,
+    ),
+    vis: Restricted(
+        VisRestricted {
+            pub_token: Pub,
+            paren_token: Paren,
+            in_token: None,
+            path: Path {
+                leading_colon: None,
+                segments: [
+                    PathSegment {
+                        ident: Ident(
+                            crate,
+                        ),
+                        arguments: None,
+                    },
+                ],
+            },
+        },
+    ),
+    trait_name: None,
+    encapsulant_name: Ident(
+        Database,
+    ),
+    property_name: None,
+}
